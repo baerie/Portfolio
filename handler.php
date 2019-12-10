@@ -1,24 +1,15 @@
 <?php
+if(!empty($_POST["send"])) {
+    $name = $_POST["userName"];
+    $email = $_POST["userEmail"];
+    $subject = $_POST["subject"];
+    $content = $_POST["content"];
 
-    $name = $_POST('name');
-    $visitor_email = $_POST('email');
-    $message = $_POST('message');
-
-    $email_from = 'BartoszPortfolioTest@gmx.de';
-
-    $email_subject = "New Form Submission";
-
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                    "User Message: $message.\n";
-
-    $to = "bartosz.adamski91@gmail.com";
-
-    $headers = "From: $email_from \r\n";
-
-    $headers .= "Reply-To: $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: index.html");
+    $toEmail = "admin@phppot_samples.com";
+    $mailHeaders = "From: " . $name . "<". $email .">\r\n";
+    if(mail($toEmail, $subject, $content, $mailHeaders)) {
+        $message = "Your contact information is received successfully.";
+        $type = "success";
+    }
+}
 ?>
