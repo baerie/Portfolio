@@ -46,49 +46,60 @@ iframe {
 
 /*KLASSEN*/
 
-
-/* ///// FORMULAR ///// */
-div.elem-group {
-    margin: 40px 0;
+.skillSkale{
+    height:1.25em;
 }
 
-label {
+.infoCaption{
     display: block;
-    font-family: 'Aleo';
-    padding-bottom: 4px;
-    font-size: 1.25em;
+    max-width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom:1em;
 }
 
-input, select, textarea {
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 1.25em;
-    font-family: 'Aleo';
-    width: 500px;
-    padding: 8px;
+.infoBox{
+    opacity: 1;
+    display: block;
+    margin: 1em 0;
+    padding: 0.5em;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,ffffff+47,f2f2f2+90,d3d3d3+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 47%, rgba(242,242,242,1) 90%, rgba(211,211,211,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d3d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+    border: 0.5em solid white;
+    backface-visibility: hidden;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
-textarea {
-    height: 250px;
+.infoBox:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,ffffff+47,f2f2f2+100 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 47%, rgba(242,242,242,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
 }
 
-button {
-    height: 50px;
-    background: green;
-    color: white;
-    border: 2px solid darkgreen;
-    font-size: 1.25em;
-    font-family: 'Aleo';
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-button:hover {
-    border: 2px solid black;
-}
-
-/* ///// /FORMULAR ///// */
 
 .sizeSkale{
     height: 16em;
