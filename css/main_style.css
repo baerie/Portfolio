@@ -106,10 +106,10 @@ iframe {
 }
 
 .nextButton, .backButton{
-    position:relative;
+    margin-top: 2em;
     width: 132px;
     height: 79px;
-    z-index: 9999;
+    z-index: 500;
     display: inline-block;
     top: 45vh;
 }
@@ -427,14 +427,7 @@ iframe {
         margin-top:.7em;
     }
 
-    .nextButton, .backButton{
-        position:absolute;
-        width: 66px;
-        height: 40px;
-        z-index: 9999;
-        display: inline-block;
-        top: 5vh;
-    }
+
 
 }
 
@@ -502,6 +495,7 @@ iframe {
         z-index: 9999;
         display: inline-block;
         top: 45vh;
+        margin-top: 0;
     }
 
 }
