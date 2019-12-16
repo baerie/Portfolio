@@ -106,7 +106,7 @@ iframe {
 }
 
 .nextButton, .backButton{
-    position:fixed;
+    position:relative;
     width: 132px;
     height: 79px;
     z-index: 9999;
@@ -198,7 +198,6 @@ iframe {
 
 .container:hover .middle {
     opacity: 1;
-
     -webkit-transition: all 350ms ease;
     -moz-transition: all 350ms ease;
     -ms-transition: all 350ms ease;
@@ -428,6 +427,15 @@ iframe {
         margin-top:.7em;
     }
 
+    .nextButton, .backButton{
+        position:absolute;
+        width: 66px;
+        height: 40px;
+        z-index: 9999;
+        display: inline-block;
+        top: 5vh;
+    }
+
 }
 
 
@@ -476,12 +484,25 @@ iframe {
 
 /* Media Query for medium and bigger Devices */
 
-@media (min-width 641px) and (max-width 1024px) {
+@media (min-width:641px) and (max-width:1024px) {
 
 
 
 
 
+
+}
+
+@media (min-width:1280px){
+
+    .nextButton, .backButton{
+        position:fixed !important;
+        width: 132px;
+        height: 79px;
+        z-index: 9999;
+        display: inline-block;
+        top: 45vh;
+    }
 
 }
 
