@@ -33,7 +33,7 @@
             <div class="left">
 
             </div>
-            <nav class="top-bar" data-topbar role="navigation">
+            <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop: false">
                 <ul class="title-area">
                     <li class="toggle-topbar menu-icon">
                         <a href="#"><span>Menu</span></a>
@@ -211,7 +211,9 @@
 
 
 </body>
-
+<script>
+    $(document).foundation();
+</script>
 <script>
     $(function() {
         $(".rslides").responsiveSlides();

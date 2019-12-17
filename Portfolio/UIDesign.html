@@ -30,7 +30,7 @@
         <div class="left">
 
         </div>
-        <nav class="top-bar" data-topbar role="navigation">
+        <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop: false">
             <ul class="title-area">
                 <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
@@ -59,27 +59,20 @@
         <div class="row">
             <div class="columns medium-6">
                 <div class="description">
-
+                    "Powersite" ist ein Videospiel, welches von einem sechsköpfigen Studenten-Team an der Hochschule Furtwangen im Rahmen des Gamedesign Workshops entwickelt wurde.
+                    <br><br><br>
+                    Der Clue des Spiels: Das Spiel läuft sowohl auf dem Computer, als auch auf mobilen Geräten, wobei ein Smartphone immer als Controller verwendet wird.
                 </div>
             </div>
-            <div class="columns medium-6">
+            <div class="columns medium-6 show-for-medium-up">
                 <img src="../assets/img/Ui/01_Title.jpg" height="1080" width="1920" class="shadowborder thumb1"/>
             </div>
         </div>
         <div class="row">
-            <div class="columns medium-6">
+            <div class="columns medium-6 show-for-medium-up">
                 <img src="../assets/img/Ui/05-6_Kampfphase.png" height="1080" width="1920" class="shadowborder thumb1"/>
             </div>
-
-            <div class="columns medium-6">
-                <div class="description">
-
-                </div>
-            </div>
-        </div>
-        <br><br>
-        <div class="row">
-            <div class="columns medium-12">
+            <div class="columns medium-6 show-for-small-down">
                 <div class="content">
                     <ul class="rslides shadowborder text-center">
                         <li>
@@ -125,14 +118,85 @@
                     </ul>
                 </div>
             </div>
+            <div class="columns medium-6">
+                <div class="description">
+                    Bei diesem Projekt war ich für die Gestaltung des User Interfaces zuständig.
+                    <br><br>
+                    Das User Interface sollte dabei stets übersichtlich, aber auch frisch bleiben und selbst in stressigen Situation möglichst intuitiv bleiben.
+                    <br>
+                    Dabei orientierte ich mich stets am Weltraumszenario des Spiels und an den Farbgebungen der drei Hauptcharaktere.
+
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="columns medium-12 show-for-medium-up">
+                <div class="content">
+                    <ul class="rslides shadowborder text-center">
+                        <li>
+                            <img src="../assets/img/Ui/01_Title.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Startseite des Spiels "Powersite"</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/02_Lobby.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Menü / Spielwahl/ Beitritt</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/04_1_Chartakterauswahl.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Characterauswahl und -beschreibung</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/04_3_Attribute.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Level Up Menü</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/04_4_Elemente.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Skill Menü</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/04_Entwicklungsphase.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Ladebildschirm</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/Sekundärscreen-KAMPF.JPG" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Early Sketch zur Steuerung</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/05-6_Kampfphase.png" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Finale Steuerung auf mobile Devices</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/06-2_Endergebnis.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Endscreen auf mobilem Gerät</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/Ui/06-3_Endergebnis.jpg" class="thumb1" height="1080" width="1920"/>
+                            <p class="slideCaption">Endscreen auf dem Computer</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns small-6 text-left">
+                    <a href="Computergrafik.html" class="backButton"></a>
+                </div>
+                <div class="columns small-6 text-right">
+                    <a href="Typografie.html" class="nextButton"></a>
+                </div>
+            </div>
         </div>
 
     </div>
 
 </div> <!-- /ROW WRAPPER -->
-<a href="Computergrafik.html" class="backButton"></a>
-<a href="Typografie.html" class="nextButton"></a>
+
+
 </body>
+<script>
+    $(document).foundation();
+</script>
 <script>
     $(function() {
         $(".rslides").responsiveSlides();

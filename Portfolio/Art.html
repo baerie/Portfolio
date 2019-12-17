@@ -28,7 +28,7 @@
         <div class="left">
 
         </div>
-        <nav class="top-bar" data-topbar role="navigation">
+        <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop: false">
             <ul class="title-area">
                 <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
@@ -47,7 +47,7 @@
     </div>
     <!-- /NAVI -->
 
-    <div class="pseudo-row">
+    <div class="row">
 
         <div class="columns medium-12 text-center">
             <img src="../assets/img/captions3/art.png" height="167" width="384"/>
@@ -67,13 +67,24 @@
                 </ul>
             </div>
         </div>
+        <div class="row">
+            <div class="columns small-6 text-left">
+                <a href="Thesis.html" class="backButton"></a>
+            </div>
+            <div class="columns small-6 text-right">
+                <a href="Flash_Animation.html" class="nextButton"></a>
+            </div>
+        </div>
 
     </div>
 
+
 </div> <!-- /ROW WRAPPER -->
-<a href="Thesis.html" class="backButton"></a>
-<a href="Flash_Animation.html" class="nextButton"></a>
+
 </body>
+<script>
+    $(document).foundation();
+</script>
 <script>
     $(function() {
         $(".rslides").responsiveSlides();

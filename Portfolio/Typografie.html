@@ -30,7 +30,7 @@
         <div class="left">
 
         </div>
-        <nav class="top-bar" data-topbar role="navigation">
+        <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop: false">
             <ul class="title-area">
                 <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
@@ -84,13 +84,23 @@
                     </ul>
                 </div>
             </div>
+            <div class="row">
+                <div class="columns small-6 text-left">
+                    <a href="UIDesign.html" class="backButton"></a>
+                </div>
+                <div class="columns small-6 text-right">
+
+                </div>
+            </div>
         </div>
 
     </div>
 
 </div> <!-- /ROW WRAPPER -->
-<a href="UIDesign.html" class="backButton"></a>
 </body>
+<script>
+    $(document).foundation();
+</script>
 <script>
     $(function() {
         $(".rslides").responsiveSlides();

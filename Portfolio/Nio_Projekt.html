@@ -30,7 +30,7 @@
         <div class="left">
 
         </div>
-        <nav class="top-bar" data-topbar role="navigation">
+        <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop: false">
             <ul class="title-area">
                 <li class="toggle-topbar menu-icon">
                     <a href="#"><span>Menu</span></a>
@@ -54,7 +54,42 @@
         <div class="columns medium-12 text-center">
             <img src="../assets/img/captions3/nio.png" height="167" width="384"/>
         </div>
-        <div class="row">
+        <div class="show-for-small-down">
+            <div class="row">
+                <div class="columns small-12">
+                    <div class="description">
+                        Die Webseite von NIO Sarl entstand als eines meiner ersten eigenständigen Freelancer-Projekte - dementsprechend war die Spannung auf die Arbeit und auf das Ergebnis groß.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns small-12">
+                    <div class="content">
+                        <ul class="rslides shadowborder">
+                            <li>
+                                <img src="../assets/img/NioSarl/Screenshot (199).png" class="thumb1" />
+                            </li>
+                            <li>
+                                <img src="../assets/img/NioSarl/Screenshot (200).png" class="thumb1" height="1080" width="1920"/>
+                            </li>
+                            <li>
+                                <img src="../assets/img/NioSarl/Screenshot (201).png" class="thumb1" />
+                            </li>
+                            <li>
+                                <img src="../assets/img/NioSarl/Screenshot (202).png" class="thumb1" height="1080" width="1920"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="columns small-12">
+                    Die Seite konnte für beide Partien zufreidenstellend fertiggestellt werden - leider war sie dennoch nicht lange online.
+                </div>
+            </div>
+        </div>
+
+        <div class="row show-for-medium-up">
             <div class="columns medium-6">
                 <div class="description">
                     Die Webseite von NIO Sarl entstand als eines meiner ersten eigenständigen Freelancer-Projekte - dementsprechend war die Spannung auf die Arbeit und auf das Ergebnis groß.
@@ -68,7 +103,7 @@
         </div>
         <br><br>
         <div class="row">
-            <div class="columns medium-12">
+            <div class="columns medium-12 show-for-medium-up">
                 <div class="content">
                     <ul class="rslides shadowborder">
                         <li>
@@ -86,14 +121,24 @@
                     </ul>
                 </div>
             </div>
+            <div class="row">
+                <div class="columns small-6 text-left">
+                    <a href="Flash_Animation.html" class="backButton"></a>
+                </div>
+                <div class="columns small-6 text-right">
+                    <a href="Computergrafik.html" class="nextButton"></a>
+                </div>
+            </div>
         </div>
 
     </div>
 
 </div> <!-- /ROW WRAPPER -->
-<a href="Flash_Animation.html" class="backButton"></a>
-<a href="Computergrafik.html" class="nextButton"></a>
+
 </body>
+<script>
+    $(document).foundation();
+</script>
 <script>
     $(function() {
         $(".rslides").responsiveSlides();
