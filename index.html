@@ -7,6 +7,9 @@
 
     <title>Bartosz Adamski | Portfolio</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/main_style.css">
@@ -17,7 +20,8 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
-      <script src="js/vendor/smoothscroll.js"></script>
+    <script src="js/vendor/smoothscroll.js"></script>
+    <script src="js/main_script.js"></script>
 
 
 
@@ -31,12 +35,12 @@
       <!-- NAVI -->
       <div class="contain-to-grid fixed">
         <div class="left">
-
+            
         </div>
-        <nav class="top-bar" data-topbar role="navigation">
+        <nav class="top-bar" data-topbar role="navigation" data-options="scrolltop: false">
           <ul class="title-area">
             <li class="toggle-topbar menu-icon">
-              <a href="#"><span>Menu</span></a>
+              <a href="#"><span></span></a>
             </li>
           </ul>
           <section class="top-bar-section">
@@ -53,7 +57,17 @@
       </div>
       <!-- /NAVI -->
 
+
+
       <div class="pseudo-row">
+
+        <div class="row">
+          <div class="columns medium-4 medium-push-4 text-center">
+
+              <img src="assets/img/title/titleFinal.jpg" class="shadowborder thumb1">
+
+          </div>
+        </div>
 
         <div id="Portfolio" class="main_Content show-for-medium-up">
           <div class="row">
@@ -479,11 +493,10 @@
                                   78713 Schramberg
                               </div>
                               <div class="columns small-6">
-                                  &nbsp;
                                   <br>
                                   0170 327 22 32
                                   <br>
-                                  <a href="mailto:b.adamski@outlook.de"> b.adamski@outlook.de </a>
+                                  <a href="mailto:b.adamski@outlook.de">b.adamski@outlook.de</a>
                               </div>
                           </div>
                       </div>
@@ -497,5 +510,8 @@
     </div> <!-- /ROW WRAPPER -->
 
   </body>
+  <script>
+    $(document).foundation();
+  </script>
 
 </html>
