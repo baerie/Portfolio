@@ -3,7 +3,8 @@
 /* HTML TAGS */
 
 body{
-    background-color:#f2f2f2;
+    background-image: url(../assets/img/background/bg_2.jpg);
+    /*background-color:#f2f2f2;*/
     background-position: center center;
     background-attachment:fixed;
     background-size:cover;
@@ -45,6 +46,54 @@ iframe {
 
 
 /*KLASSEN*/
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+#slideshow IMG.active {
+    z-index:10;
+}
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+.dlButton{
+    border:2px solid white;
+
+    color: black !important;
+
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 47%, rgba(242,242,242,1) 90%, rgba(211,211,211,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d3d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+    display:inline-block;
+    padding:10px;
+
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.dlButton:hover{
+    color:#FFB032 !important;
+    padding:12px;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
 
 .skillSkale{
     height:1.25em;
@@ -99,14 +148,17 @@ iframe {
 
 }
 
-
+.flashWindow{
+    height:424px;
+    width:570px;
+}
 
 .sizeSkale{
     height: 16em;
 }
 
 .nextButton, .backButton{
-    margin-top: 2em;
+    margin-top: 5em;
     width: 132px;
     height: 79px;
     z-index: 500;
@@ -263,7 +315,7 @@ iframe {
 /* NAVBAR */
 
 .navlogo{
-    height:1.4em;
+    height:1.5em;
     padding-right:3em;
     margin-top:.5em;
     left:15px;
@@ -348,7 +400,6 @@ iframe {
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* ratio 16x9 */
-    height: 0;
     overflow: hidden;
     width: 100%;
     height: auto;
@@ -425,6 +476,10 @@ iframe {
         height:2em;
         padding-right:3em;
         margin-top:.7em;
+    }
+
+    .description{
+        padding:5px;
     }
 
 
