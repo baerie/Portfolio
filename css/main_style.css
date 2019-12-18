@@ -3,8 +3,8 @@
 /* HTML TAGS */
 
 body{
-    background-image: url(../assets/img/background/bg_2.jpg);
-    /*background-color:#f2f2f2;*/
+    background-image: url(../assets/img/background/bg_4.jpg);
+    /*background-color:#e2cbb3;*/
     background-position: center center;
     background-attachment:fixed;
     background-size:cover;
@@ -15,7 +15,7 @@ body{
 
 body:after{
     display:none;
-    content: url(../assets/img/nextButtonActive.jpg) url(../assets/img/backButtonActive.jpg);
+    content: url(../assets/img/nextButtonActive.jpg) url(../assets/img/backButtonActive.jpg) url(../assets/img/homeIcon/homeOn.png) url(../assets/img/homeIcon/homeOff.png);
 }
 
 ::-webkit-scrollbar{
@@ -46,6 +46,20 @@ iframe {
 
 
 /*KLASSEN*/
+
+
+
+.contentBundle{
+    background-image: url(../assets/img/background/bg_2.jpg);
+    background-position: center center;
+    background-attachment:fixed;
+    background-size:cover;
+    padding: 0.5em 2.5em 2.5em 2.5em;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+}
 
 #slideshow IMG {
     position:absolute;
@@ -155,6 +169,21 @@ iframe {
 
 .sizeSkale{
     height: 16em;
+}
+
+.homeButton{
+    background: url("../assets/img/homeIcon/homeOff.png") no-repeat;
+    background-size: cover;
+    display:inline-block;
+    height:1.5em;
+    width:1.5em;
+    margin: 8px 0px 0px 10px;
+}
+
+.homeButton:hover{
+    background: url("../assets/img/homeIcon/homeOn.png") no-repeat;
+    background-size: cover;
+    display:inline-block;
 }
 
 .nextButton, .backButton{
@@ -273,7 +302,6 @@ iframe {
 }
 
 .main_Content{
-    padding-top: 8vh;
     min-height: 110vh;
 }
 
@@ -478,11 +506,54 @@ iframe {
         margin-top:.7em;
     }
 
-    .description{
-        padding:5px;
+
+
+    .homeButton{
+        margin: 10px 0px 0px 10px;
     }
 
+    .contentBundle{
+        background-image: none;
+        background-position: none;
+        background-attachment:none;
+        background-size:none;
+        padding: none;
+        -webkit-border-radius: none;
+        border-radius: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 
+    .titleImg{
+        height: 20em;
+        margin-bottom: 7.5vh;
+    }
+
+    .description{
+        opacity: 1;
+        display: block;
+        margin: 1em 0;
+        padding: 0.5em;
+
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,ffffff+47,f2f2f2+90,d3d3d3+100 */
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 47%, rgba(242,242,242,1) 90%, rgba(211,211,211,1) 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d3d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+        border: 0.2em solid white;
+        backface-visibility: hidden;
+
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    }
 
 }
 
@@ -524,6 +595,44 @@ iframe {
         padding:25vh 5vh 5vh 5vh;
         margin-top:40vh;
         min-height:55vh;
+    }
+
+    .description{
+        opacity: 1;
+        display: block;
+        margin: 1em 0;
+        padding: 0.25em;
+
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,ffffff+47,f2f2f2+90,d3d3d3+100 */
+        background: rgb(255,255,255); /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 47%, rgba(242,242,242,1) 90%, rgba(211,211,211,1) 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 47%,rgba(242,242,242,1) 90%,rgba(211,211,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3d3d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+        border: 0.2em solid white;
+        backface-visibility: hidden;
+
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+    }
+
+    .contentBundle{
+        background-image: none;
+        background-position: none;
+        background-attachment:none;
+        background-size:none;
+        padding: none;
+        -webkit-border-radius: none;
+        border-radius: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 
 
