@@ -3,7 +3,7 @@
 /* HTML TAGS */
 
 body{
-    background-image: url("../assets/img/background/bg_4.jpg") no-repeat;
+    background-image: url(../assets/img/background/bg_4.jpg);
     /*background-color:#e2cbb3;*/
     background-position: center center;
     background-attachment:fixed;
