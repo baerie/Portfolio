@@ -47,7 +47,9 @@ iframe {
 
 /*KLASSEN*/
 
-
+.captionImg{
+    height:4em;
+}
 
 .contentBundle{
     background-image: url(../assets/img/background/bg_2.jpg);
@@ -302,7 +304,7 @@ iframe {
 }
 
 .main_Content{
-    min-height: 110vh;
+    margin-bottom: 25vh;
 }
 
 .safety-space{
